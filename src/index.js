@@ -1,15 +1,10 @@
-import fs from 'fs'
-import crypto from 'crypto'
-import base64 from 'base-64'
-import cryptoJs from 'crypto-js'
+import crypto from 'crypto';
+import base64 from 'base-64';
+import cryptoJs from 'crypto-js';
 
-export const checkSignature = (data, sig, keyPath) => {
-  const key = fs.readFileSync(keyPath)
-
-  return crypto.createVerify('SHA1')
-    .update(data)
-    .verify(key, sig, 'base64')
-}
+export const checkSignature = (data, sig, key) => crypto.createVerify('SHA1')
+  .update(data)
+  .verify(key, sig, 'base64')
 export const encode = v => base64.encode(v)
 export const decode = v => base64.decode(v)
 export const hashHmacWithBase64 = (algo = 'sha256', v, k) => crypto.createHmac(algo, k)
