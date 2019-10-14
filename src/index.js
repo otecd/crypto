@@ -1,6 +1,6 @@
-import crypto from 'crypto';
-import base64 from 'base-64';
-import cryptoJs from 'crypto-js';
+import crypto from 'crypto'
+import base64 from 'base-64'
+import cryptoJs from 'crypto-js'
 
 export const checkSignature = (data, sig, key) => crypto.createVerify('SHA1')
   .update(data)

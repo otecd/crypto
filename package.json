@@ -12,6 +12,7 @@
   "scripts": {
     "build": "neutrino build",
     "lint": "neutrino lint",
+    "lint:fix": "npm run lint -- --fix",
     "test": "neutrino test"
   },
   "keywords": [],
