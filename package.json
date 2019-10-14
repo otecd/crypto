@@ -1,0 +1,31 @@
+{
+  "name": "luna-crypto-lib",
+  "version": "1.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "publishConfig": {
+    "registry": "https://packages.lunaapps.ru"
+  },
+  "scripts": {
+    "build": "neutrino build",
+    "lint": "neutrino lint",
+    "test": "neutrino test"
+  },
+  "keywords": [],
+  "author": "Dmitrii Pron <idimzz@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@neutrinojs/library": "^8.3.0",
+    "@neutrinojs/mocha": "^8.3.0",
+    "@neutrinojs/standardjs": "^8.3.0",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "neutrino": "^8.3.0"
+  },
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "crypto-js": "^3.1.9-1"
+  }
+}
