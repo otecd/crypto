@@ -1,13 +1,13 @@
 {
-  "name": "luna-crypto-lib",
-  "version": "1.0.3",
+  "name": "@noname.team/crypto-lib",
+  "version": "1.0.4",
   "description": "",
   "main": "build/index.js",
   "files": [
     "build"
   ],
   "publishConfig": {
-    "registry": "https://packages.lunaapps.ru"
+    "access": "public"
   },
   "scripts": {
     "build": "neutrino build",
