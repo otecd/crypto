@@ -4,7 +4,7 @@ module.exports = {
     [
       '@neutrinojs/library',
       {
-        name: 'image-saver',
+        name: 'crypto',
         target: 'node',
         libraryTarget: 'commonjs2',
         babel: {
