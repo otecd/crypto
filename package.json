@@ -1,5 +1,5 @@
 {
-  "name": "@noname.team/crypto-lib",
+  "name": "@noname.team/crypto",
   "version": "1.0.4",
   "description": "",
   "main": "build/index.js",
