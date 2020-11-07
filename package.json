@@ -10,20 +10,27 @@
     "access": "public"
   },
   "scripts": {
-    "build": "neutrino build",
-    "lint": "neutrino lint",
+    "lint": "standard",
     "lint:fix": "npm run lint -- --fix",
-    "test": "neutrino test"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "Dmitrii Pron <idimzz@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:papadima/crypto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/papadima/crypto/issues"
+  },
+  "homepage": "https://github.com/papadima/crypto",
   "license": "ISC",
   "devDependencies": {
-    "@neutrinojs/library": "^8.3.0",
-    "@neutrinojs/mocha": "^8.3.0",
-    "@neutrinojs/standardjs": "^8.3.0",
-    "babel-plugin-dynamic-import-node": "^2.3.0",
-    "neutrino": "^8.3.0"
+    "@neutrinojs/library": "^9.4.0",
+    "neutrino": "^9.4.0",
+    "standard": "^14.3.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "base-64": "^0.1.0",
